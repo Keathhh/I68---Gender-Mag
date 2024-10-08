@@ -2,7 +2,6 @@ import React from "react";
 import { FaEllipsisH } from "react-icons/fa";
 
 const Result = () => {
-    const contracts = [
         { id: 1, name: "Sugguet", country: "France", points: "point" },
         { id: 2, name: "Sugguet", country: "Netherlands", points: "point" },
         { id: 3, name: "Sugguet", country: "Sugguet", points: "point" },
@@ -30,18 +29,13 @@ const Result = () => {
                                     <FaEllipsisH className="text-gray-400"/>
                                 </div>
                                 <div className="space-y-4">
-                                    {contracts.map((contract) => (
                                         <div
-                                            key={contract.id}
                                             className="bg-gray-50 p-4 rounded-lg shadow flex justify-between items-center"
                                         >
                                             <div>
                                                 <div className="text-lg font-bold">
-                                                    {contract.id}.{contract.name}
                                                 </div>
-                                                <div className="text-sm text-gray-500">{contract.country}</div>
                                             </div>
-                                            <div className="text-lg font-bold">{contract.points}</div>
                                         </div>
                                     ))}
                                 </div>

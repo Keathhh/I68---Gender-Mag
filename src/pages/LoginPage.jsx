@@ -29,7 +29,7 @@ function App() {
                     <section className={'flex justify-center items-center space-x-2'}>
                         <FcOpenedFolder size={38}/>
                         <h2 className={'text-xl font-bold'}>
-                            MAG!
+                            GenderMag
                         </h2>
                     </section>
                     <div className="text-center">
