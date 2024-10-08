@@ -36,14 +36,14 @@ const UploadSection = () => {
 
 const HistorySection = () => {
     const historyItems = [
-        {name: 'Contract Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
-        {name: 'Contract Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
-        {name: 'Contract Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
-        {name: 'Contract Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
-        {name: 'Contract Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
-        {name: 'Contract Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
-        {name: 'Contract Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
-        {name: 'Contract Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
+        {name: 'Report Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
+        {name: 'Report Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
+        {name: 'Report Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
+        {name: 'Report Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
+        {name: 'Report Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
+        {name: 'Report Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
+        {name: 'Report Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
+        {name: 'Report Name', priority: 'High', date: 'Mar 1, 2024', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPRcdK5M0XpERTbc3HOXbMjUtswiDM08iZA&s'},
     ];
 
     return (

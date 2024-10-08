@@ -20,14 +20,14 @@ const Sidebar = () => {
                     Home
                 </NavLink>
                 <NavLink
-                    to="/admin/contracts"
+                    to="/admin/reports"
                     className={({ isActive }) =>
                         isActive ? "flex items-center p-4 text-blue-500 bg-blue-100 rounded-lg mb-2" :
                             "flex items-center p-4 text-gray-700 hover:bg-blue-100 hover:text-blue-500 rounded-lg mb-2"
                     }
                 >
                     <AiOutlineFileText className="h-6 w-6 mr-3" />
-                    Contracts
+                    reports
                 </NavLink>
                 <NavLink
                     to="/admin/history"

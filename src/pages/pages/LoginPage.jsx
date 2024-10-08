@@ -98,8 +98,8 @@ function App() {
             {/* Left */}
             <div className="w-1/2 bg-blue-600 text-white flex items-center justify-center px-8">
                 <div>
-                    <h1 className="text-4xl font-bold mb-4">Hey There, Welcome to MAGI!</h1>
-                    <p className={'text-gray-300'}>MAG can help you solve your problem, as long as you upload your data quickly for analysis.</p>
+                    <h1 className="text-4xl font-bold mb-4">Hey There, Welcome to GenderMag!</h1>
+                    <p className={'text-gray-300'}>GenderMag can help you solve your problem, as long as you upload your data quickly for analysis.</p>
                 </div>
             </div>
 
@@ -109,7 +109,7 @@ function App() {
                     <section className={'flex justify-center items-center space-x-2'}>
                         <FcOpenedFolder size={38} />
                         <h2 className={'text-4xl font-bold'}>
-                            MAG!
+                            GenderMag
                         </h2>
                     </section>
                     <div className="text-center">

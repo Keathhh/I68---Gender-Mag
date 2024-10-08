@@ -2,7 +2,7 @@ import React from "react";
 import { FaEllipsisH } from "react-icons/fa";
 
 const Result = () => {
-    const contracts = [
+    const reports = [
         { id: 1, name: "Sugguet", country: "France", points: "point" },
         { id: 2, name: "Sugguet", country: "Netherlands", points: "point" },
         { id: 3, name: "Sugguet", country: "Sugguet", points: "point" },
@@ -26,22 +26,22 @@ const Result = () => {
                         <div className=" mt-8">
                             <div className="bg-white rounded-xl border p-6">
                                 <div className="flex justify-between items-center mb-6">
-                                    <h2 className="text-xl font-bold">Contracts</h2>
+                                    <h2 className="text-xl font-bold">Reports</h2>
                                     <FaEllipsisH className="text-gray-400"/>
                                 </div>
                                 <div className="space-y-4">
-                                    {contracts.map((contract) => (
+                                    {reports.map((report) => (
                                         <div
-                                            key={contract.id}
+                                            key={report.id}
                                             className="bg-gray-50 p-4 rounded-lg shadow flex justify-between items-center"
                                         >
                                             <div>
                                                 <div className="text-lg font-bold">
-                                                    {contract.id}.{contract.name}
+                                                    {report.id}.{report.name}
                                                 </div>
-                                                <div className="text-sm text-gray-500">{contract.country}</div>
+                                                <div className="text-sm text-gray-500">{report.country}</div>
                                             </div>
-                                            <div className="text-lg font-bold">{contract.points}</div>
+                                            <div className="text-lg font-bold">{report.points}</div>
                                         </div>
                                     ))}
                                 </div>

@@ -27,8 +27,8 @@ const Header = () => {
                         <p className="text-xl mt-2">Here's your dashboard overview.</p>
                     </section>
                 );
-            case '/admin/contracts':
-                return 'Contracts';
+            case '/admin/reports':
+                return 'Reports';
             case '/admin/history':
                 return 'Results History';
             case '/admin/suggestion':
@@ -68,8 +68,8 @@ const Header = () => {
                 <h1 className="text-3xl font-bold">{getTitle(location.pathname)}</h1>
             </div>
             <div className="flex items-center space-x-8">
-                <button className="bg-blue-500 text-white px-6 py-3 rounded-full flex items-center space-x-1" onClick={() => nav('/admin/contracts')}>
-                    <span className="font-bold">Create A Contract</span>
+                <button className="bg-blue-500 text-white px-6 py-3 rounded-full flex items-center space-x-1" onClick={() => nav('/admin/reports')}>
+                    <span className="font-bold">Create A Report</span>
                     <MdAddCircleOutline size={24} />
                 </button>
                 <div className="flex items-center space-x-4 cursor-pointer" >

@@ -26,7 +26,7 @@ const Result = () => {
                         <div className=" mt-8">
                             <div className="bg-white rounded-xl border p-6">
                                 <div className="flex justify-between items-center mb-6">
-                                    <h2 className="text-xl font-bold">Contracts</h2>
+                                    <h2 className="text-xl font-bold">Reports</h2>
                                     <FaEllipsisH className="text-gray-400"/>
                                 </div>
                                 <div className="space-y-4">

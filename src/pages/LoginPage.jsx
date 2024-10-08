@@ -18,7 +18,7 @@ function App() {
             {/* 左侧 */}
             <div className="w-1/2 bg-blue-600 text-white flex items-center justify-center px-8">
                 <div>
-                    <h1 className="text-4xl font-bold mb-4">Hey There, Welcome to MAGI!</h1>
+                    <h1 className="text-4xl font-bold mb-4">Hey There, Welcome to GenderMag!</h1>
                     <p className={'text-gray-300'}>MAG can help you solve your problem, as long as you upload your data quickly for analysis.</p>
                 </div>
             </div>
