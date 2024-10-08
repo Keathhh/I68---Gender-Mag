@@ -33,7 +33,7 @@ function App() {
                         </h2>
                     </section>
                     <div className="text-center">
-                        <h2 className="text-3xl font-extrabold text-gray-900">Create a Ngul! <br/> account</h2>
+                        <h2 className="text-3xl font-extrabold text-gray-900">Create an Account <br/> account</h2>
                     </div>
                     <form className="mt-8 space-y-6">
                         <div className="flex justify-center">
