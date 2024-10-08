@@ -6,7 +6,6 @@ const Sidebar = () => {
     return (
         <div className="w-64 px-4 flex flex-col bg-white shadow-md h-screen relative">
             <div className="p-6 text-2xl font-bold font-extrabold text-gray-800">
-                MAGI!
                 GenderMag
             </div>
             <nav className="mt-4 flex-1 font-bold">
@@ -21,12 +20,14 @@ const Sidebar = () => {
                     Home
                 </NavLink>
                 <NavLink
+                    to="/admin/reports"
                     className={({ isActive }) =>
                         isActive ? "flex items-center p-4 text-blue-500 bg-blue-100 rounded-lg mb-2" :
                             "flex items-center p-4 text-gray-700 hover:bg-blue-100 hover:text-blue-500 rounded-lg mb-2"
                     }
                 >
                     <AiOutlineFileText className="h-6 w-6 mr-3" />
+                    Reports
                 </NavLink>
                 <NavLink
                     to="/admin/history"

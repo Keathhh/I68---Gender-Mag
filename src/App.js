@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import Layout from './components/Layout';
+import Reports from "./pages/Admin/Reports";
 import Result from "./pages/Admin/Result";
 import AdminHome from "./pages/Admin/Home";
 import History from "./pages/Admin/History";
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/home" element={<HomePage />} />
                 <Route path="/admin" element={<Layout />}>
                     <Route path="index" element={<AdminHome />} />
+                    <Route path="reports" element={<Reports />} />
                     <Route path="history" element={<History />} />
                     <Route path="result" element={<Result />} />
                     <Route path="suggestion" element={<Suggestion />} />

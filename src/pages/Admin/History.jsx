@@ -9,6 +9,11 @@ const HistoryTable = () => {
     const nav = useNavigate()
     const data = React.useMemo(
         () => [
+            { report: "Report Name", date: "Mar 1, 2024", time: "08:00 AM", impact: "High", record: "record" },
+            { report: "Report Name", date: "Mar 1, 2024", time: "08:00 AM", impact: "High", record: "record" },
+            { report: "Report Name", date: "Mar 1, 2024", time: "08:00 AM", impact: "Low", record: "record" },
+            { report: "Report Name", date: "Mar 1, 2024", time: "08:00 AM", impact: "Medium", record: "record" },
+            { report: "Report Name", date: "Mar 1, 2024", time: "08:00 AM", impact: "High", record: "record" },
         ],
         []
     );
