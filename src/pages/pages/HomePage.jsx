@@ -70,7 +70,7 @@ function Home() {
                     <p className="mt-4 text-lg text-gray-700">GenderMag can help you solve your problem.</p>
                     <div className="mt-8 flex justify-center space-x-4">
                         <Link to="about" smooth={true} duration={500}>
-                            <button className="px-8 py-3 bg-gray-900 text-white font-semibold rounded-full hover:bg-gray-700" onClick={()=>nav('/login')}>Get Started</button>
+                            <button className="px-8 py-3 bg-gray-900 text-white font-semibold rounded-full hover:bg-gray-700" onClick={()=>nav('/register')}>Get Started</button>
                         </Link>
                         <Link to="about" smooth={true} duration={500}>
                             <button className="px-8 py-3 bg-gray-200 text-gray-900 font-semibold rounded-full hover:bg-gray-300">Learn More</button>

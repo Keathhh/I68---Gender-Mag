@@ -19,7 +19,6 @@ function App() {
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/register" element={<RegisterPage />} />
                 <Route path="/home" element={<HomePage />} />
-
                 {/* 保护 admin 路由，只有登录用户可以访问 */}
                 <Route path="/admin" element={<PrivateRoute><Layout /></PrivateRoute>}>
                     <Route path="index" element={<AdminHome />} />
