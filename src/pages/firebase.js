@@ -15,7 +15,6 @@ const firebaseConfig = {
 };
 
 
-
 // 初始化 Firebase
 const app = initializeApp(firebaseConfig);
 

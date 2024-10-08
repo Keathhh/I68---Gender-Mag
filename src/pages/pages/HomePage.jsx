@@ -19,7 +19,7 @@ function Navbar() {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <div className="flex-shrink-0">
-                        <h1 className="text-2xl font-extrabold text-gray-900">MAGI</h1>
+                        <h1 className="text-2xl font-extrabold text-gray-900">GenderMag</h1>
                     </div>
 
                     {/* Navigation Links */}
@@ -66,8 +66,8 @@ function Home() {
             <main className="pt-20"> {/* 添加 pt-16 以避免内容与固定的导航栏重叠 */}
                 {/* Section 1 */}
                 <section id="home" className="text-center py-20">
-                    <h1 className="text-5xl font-bold text-gray-900">Here's How <span className="text-blue-600">MAGI!</span></h1>
-                    <p className="mt-4 text-lg text-gray-700">MAG can help you solve your problem.</p>
+                    <h1 className="text-5xl font-bold text-gray-900">Here's How <span className="text-blue-600">GenderMag</span></h1>
+                    <p className="mt-4 text-lg text-gray-700">GenderMag can help you solve your problem.</p>
                     <div className="mt-8 flex justify-center space-x-4">
                         <Link to="about" smooth={true} duration={500}>
                             <button className="px-8 py-3 bg-gray-900 text-white font-semibold rounded-full hover:bg-gray-700" onClick={()=>nav('/login')}>Get Started</button>
@@ -82,8 +82,8 @@ function Home() {
                 <section id="about" className="bg-white py-20">
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-5xl font-bold text-gray-900">About <span className={'text-blue-600'}>Us</span></h2>
-                        <p className="mt-4 text-lg text-gray-700">MAGI is a platform designed to help you streamline your tasks and enhance productivity. With cutting-edge features and user-friendly interfaces, we ensure that you can manage your projects efficiently and effectively.</p>
-                        <p className="mt-4 text-lg text-gray-700">Our mission is to provide tools that empower individuals and teams to achieve their goals seamlessly. Whether you're looking to upload files, analyze data, or collaborate with peers, MAGI has got you covered.</p>
+                        <p className="mt-4 text-lg text-gray-700">GenderMag is a platform designed to help you streamline your tasks and enhance productivity. With cutting-edge features and user-friendly interfaces, we ensure that you can manage your projects efficiently and effectively.</p>
+                        <p className="mt-4 text-lg text-gray-700">Our mission is to provide tools that empower individuals and teams to achieve their goals seamlessly. Whether you're looking to upload files, analyze data, or collaborate with peers, GenderMag has got you covered.</p>
                         <div className="mt-8 flex justify-center space-x-4">
                             <button className="px-8 py-3 bg-gray-900 text-white font-semibold rounded-full hover:bg-gray-700">Try</button>
                         </div>

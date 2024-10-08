@@ -6,7 +6,7 @@ const Sidebar = () => {
     return (
         <div className="w-64 px-4 flex flex-col bg-white shadow-md h-screen relative">
             <div className="p-6 text-2xl font-bold font-extrabold text-gray-800">
-                MAGI!
+                GenderMag
             </div>
             <nav className="mt-4  flex-1 font-bold">
                 <NavLink
