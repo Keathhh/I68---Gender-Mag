@@ -28,7 +28,7 @@ const Header = () => {
                     </section>
                 );
             case '/admin/reports':
-                return 'Reports';
+                return 's';
             case '/admin/history':
                 return 'Results History';
             case '/admin/suggestion':
@@ -68,8 +68,8 @@ const Header = () => {
                 <h1 className="text-3xl font-bold">{getTitle(location.pathname)}</h1>
             </div>
             <div className="flex items-center space-x-8">
-                <button className="bg-blue-500 text-white px-6 py-3 rounded-full flex items-center space-x-1" onClick={() => nav('/admin/reports')}>
-                    <span className="font-bold">Create A Report</span>
+                <button className="bg-blue-500 text-white px-6 py-3 rounded-full flex items-center space-x-1" onClick={() => nav('/admin/contracts')}>
+                    <span className="font-bold">Create A Contract</span>
                     <MdAddCircleOutline size={24} />
                 </button>
                 <div className="flex items-center space-x-4 cursor-pointer" >

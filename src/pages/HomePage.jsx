@@ -57,6 +57,7 @@ function Navbar() {
 
 function Home() {
     const [files, setFiles] = useState([]);
+    const navigate = useNavigate();
 
     return (
         <div className="bg-gray-50 text-gray-900">
@@ -85,7 +86,9 @@ function Home() {
                         <p className="mt-4 text-lg text-gray-700">GenderMag is a platform designed to help you streamline your tasks and enhance productivity. With cutting-edge features and user-friendly interfaces, we ensure that you can manage your projects efficiently and effectively.</p>
                         <p className="mt-4 text-lg text-gray-700">Our mission is to provide tools that empower individuals and teams to achieve their goals seamlessly. Whether you're looking to upload files, analyze data, or collaborate with peers, GenderMag has got you covered.</p>
                         <div className="mt-8 flex justify-center space-x-4">
-                            <button className="px-8 py-3 bg-gray-900 text-white font-semibold rounded-full hover:bg-gray-700">Try</button>
+                            <Link to="upload" smooth={true} duration={500}>
+                            <button className="px-8 py-3 bg-gray-900 text-white font-semibold rounded-full hover:bg-gray-700">Try Now!</button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -139,7 +142,8 @@ function Home() {
                         </p>
                         <div className="mt-8">
                             <button
-                                className="px-6 py-3 bg-gray-900 text-white font-semibold rounded-full hover:bg-gray-700">
+                                className="px-6 py-3 bg-gray-900 text-white font-semibold rounded-full hover:bg-gray-700"
+                                onClick={() => navigate('/login')} >
                                 Create Account
                             </button>
                         </div>

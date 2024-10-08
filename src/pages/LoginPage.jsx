@@ -19,7 +19,7 @@ function App() {
             <div className="w-1/2 bg-blue-600 text-white flex items-center justify-center px-8">
                 <div>
                     <h1 className="text-4xl font-bold mb-4">Hey There, Welcome to GenderMag!</h1>
-                    <p className={'text-gray-300'}>MAG can help you solve your problem, as long as you upload your data quickly for analysis.</p>
+                    <p className={'text-gray-300'}>GenderMag can help you solve your problem, as long as you upload your data quickly for analysis.</p>
                 </div>
             </div>
 
@@ -33,7 +33,7 @@ function App() {
                         </h2>
                     </section>
                     <div className="text-center">
-                        <h2 className="text-3xl font-extrabold text-gray-900">Create an Account <br/> account</h2>
+                        <h2 className="text-3xl font-extrabold text-gray-900">Create an Account<br/></h2>
                     </div>
                     <form className="mt-8 space-y-6">
                         <div className="flex justify-center">
@@ -86,7 +86,7 @@ function App() {
                                 <input id="terms" name="terms" type="checkbox" required
                                        className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"/>
                                 <label htmlFor="terms" className="ml-2 block text-sm text-gray-900">
-                                    I agree to Claraa <a href="#" className="text-indigo-600 hover:text-indigo-500">Terms
+                                    I agree to <a href="#" className="text-indigo-600 hover:text-indigo-500">Terms
                                     of Use</a> and <a href="#" className="text-indigo-600 hover:text-indigo-500">Privacy
                                     Policy</a>
                                 </label>
