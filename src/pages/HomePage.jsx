@@ -218,7 +218,7 @@ function Home() {
                             Open your account swiftly and efficiently for immediate access to our extensive range of services and benefits.
                         </p>
                         <div className="mt-8">
-                            <a href="#login" className="px-6 py-3 bg-gray-900 text-white font-semibold rounded-full hover:bg-gray-700">
+                            <a href="login" className="px-6 py-3 bg-gray-900 text-white font-semibold rounded-full hover:bg-gray-700">
                                 Create Account
                             </a>
                         </div>
