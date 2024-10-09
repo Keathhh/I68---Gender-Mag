@@ -8,6 +8,7 @@ import 'filepond/dist/filepond.min.css';
 import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
 import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
 import axios from 'axios';
+import { PDFDocument, rgb } from 'pdf-lib';
 
 registerPlugin(FilePondPluginImagePreview);
 
@@ -27,6 +28,7 @@ const Alert = ({ variant, title, children }) => {
   };
 
 function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false);
     const nav = useNavigate();
 
     return (
@@ -80,6 +82,21 @@ function Home() {
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(null);
 
+    const highlightText = (text, wordsToHighlight) => {
+        const regex = new RegExp(`(${wordsToHighlight.join('|')})`, 'gi');
+        return text.split(regex).map((part, index) =>
+            wordsToHighlight.includes(part.toLowerCase()) ? (
+                <span key={index} className="bg-yellow-300 font-bold">
+                    {part}
+                </span>
+            ) : (
+                part
+            )
+        );
+    };
+    
+    const wordsToHighlight = ['example', 'file', 'gender', 'security']; 
+    
     const handleFileChange = (event) => {
         const selectedFile = event.target.files[0];
         setFile(selectedFile);
@@ -109,20 +126,20 @@ function Home() {
             });
 
             if (!response.ok) {
-                throw new Error('Error processing file');
+                throw new Error(' Error processing file');
             }
 
             const data = await response.json();
             setResult(data);
             setSuccess('File processed successfully');
         } catch (error) {
-            console.error('Error processing file:', error);
-            setError('Error processing file. Please try again.');
+            console.error(' Error processing file:', error);
+            setError(' Error processing file. Please try again.');
         } finally {
             setIsLoading(false);
         }
     };
-    
+
     return (
         <div className="bg-gray-50 text-gray-900">
             <Navbar />
@@ -191,7 +208,6 @@ function Home() {
                             {isLoading ? 'Processing...' : 'Submit'}
                         </button>
                     </div>
-
                     <br></br>
                     {error && <Alert variant="error" title="Error">{error}</Alert>}
                     {success && <Alert variant="success" title="Success">{success}</Alert>}
@@ -200,7 +216,7 @@ function Home() {
                         <div className="mt-8 max-w-md mx-auto bg-white p-8 rounded-3xl shadow-2xl">
                             <h3 className="text-2xl font-bold mb-4">Processing Result</h3>
                             <pre className="whitespace-pre-wrap text-left overflow-auto">
-                                {JSON.stringify(result, null, 2)}
+                                {highlightText(JSON.stringify(result, null, 2), wordsToHighlight)}
                             </pre>
                         </div>
                     )}
@@ -230,9 +246,9 @@ function Home() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500">
                     <p>©2024 GenderMag. All Rights Reserved. <a href="#" className="text-blue-600 hover:text-blue-800">Privacy Policy</a></p>
                     <div className="mt-4 flex justify-center space-x-4">
-                        <a href="#" className="text-gray-500 hover:text-gray-900">Facebook</a>
                         <a href="#" className="text-gray-500 hover:text-gray-900">Twitter</a>
                         <a href="#" className="text-gray-500 hover:text-gray-900">LinkedIn</a>
+                        <a href="#" className="text-gray-500 hover:text-gray-900">GitHub</a>
                     </div>
                 </div>
             </footer>
