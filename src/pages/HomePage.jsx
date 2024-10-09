@@ -121,6 +121,7 @@ function Home() {
                             className="mb-4"
                         />
                         <button
+                            onClick={() => navigate('/login')}
                             className="w-full px-4 py-3 bg-blue-600  mt-4 text-white font-semibold rounded-full hover:bg-blue-500 transition-shadow shadow-md hover:shadow-lg">
                             Submit
                         </button>

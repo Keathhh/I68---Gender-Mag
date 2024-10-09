@@ -117,12 +117,11 @@ function Home() {
                             labelIdle='Drag & Drop your file or <span class="filepond--label-action">Browse</span>'
                             className="mb-4"
                         />
-                        <Link to="login" smooth={true} duration={500}>
                         <button
+                            onClick={()=>nav('/login')}
                             className="w-full px-4 py-3 bg-blue-600  mt-4 text-white font-semibold rounded-full hover:bg-blue-500 transition-shadow shadow-md hover:shadow-lg">
                             Submit
                         </button>
-                        </Link>
                     </div>
 
                     <p className="text-lg text-gray-700 mt-6 max-w-md mx-auto">Upload your documents, images, or any
